@@ -1,0 +1,15 @@
+<mvc:View
+        xmlns:mvc="sap.ui.mvc"
+        xmlns="sap.m"
+        controllerName="dogs.modules.notes.controller.EmptyNote">
+    <Page class="app__initialPage">
+        <content>
+            <Label
+                    class="app__initialPage__label"
+                    text="Пожалуйста, выберите объект из списка или создайте новый!"/>
+        </content>
+        <footer>
+            <Toolbar/>
+        </footer>
+    </Page>
+</mvc:View>

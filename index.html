@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-language="en"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-resourceroots='{
+               "dogs": "./"
+            }'>
+    </script>
+    <script>
+
+        //sap.ui.localResources('./');
+
+        new sap.m.Shell({
+            app : new sap.ui.core.ComponentContainer({
+                name : "dogs",
+                height : "100%"
+            })
+        }).placeAt("content");
+    </script>
 </head>
-<body>
-    Initial index file
+<body class="sapUiBody" id="content">
 </body>
 </html>
